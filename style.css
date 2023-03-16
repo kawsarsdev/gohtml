@@ -371,6 +371,7 @@ section p {
 .courses-section{
     background: linear-gradient(180deg, #6F7DFB 0%, #26308C 100%);  
     padding: 70px 0; 
+    padding-bottom: 120px;
 }
 
 .wrapper{
@@ -399,15 +400,17 @@ section p {
     border-radius: 24px;
     padding: 0px 32px;
     margin: 40px 0;
+    position: relative;
 }
 
 .courses-section .course-card::after{
     content: "";
     height: 8px;
+    position: absolute;
     left: 32px;
     right: 32px;
     bottom: 0;
-    background: #023047;
+    background: var(--dark-blue-color);
     border-radius: 24px;
 }
 
@@ -439,6 +442,7 @@ section p {
     line-height: 150%;
     color: var(--dark-blue-color);
     position: relative;
+    padding-left: 20px;
 }
 
 
@@ -446,8 +450,130 @@ section p {
     content: url('images/Clock.png');
     position: absolute;
     top: 2px;
-    right: 50px;
+    left: -6px;
 }
+
+.courses-section .wrapper{
+    position: relative;
+}
+
+
+.courses-section .wrapper .btn{
+    position: absolute;
+    right: 150px;
+}
+
+
+/*app-section*/
+
+.app-section{
+   text-align: center;
+}
+.app-section .app-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+
+/*footer*/
+
+footer{
+    background: var(--dark-blue-color);
+    color: #fff;
+    margin-top: 100px;
+    padding: 70px 0;
+}
+
+
+footer a{
+    text-decoration: none;
+    color: #fff;
+}
+
+footer h3{
+    color: var(--orange-color);
+}
+
+.links-container {
+    position: relative;
+    left: 80px;
+}
+
+
+footer ul{
+    list-style: none;
+    padding-left: 20px;
+}
+
+footer ul li{
+    margin: 16px 0;
+}
+
+
+footer .links-container {
+    display: grid;
+    grid-template-columns: 2fr 2fr 3fr;
+}
+
+ .copyright{
+    position: relative;
+    left: 80px;
+}
+
+footer .social{
+    margin-left: 20px;
+}
+
+
+footer .social a{
+    margin-right: 28px;
+}
+
+
+footer form{
+    margin-left: 20px;
+    margin-top: 16px;
+    position: relative;
+}
+
+footer form input{
+    font-family: "Poppins", sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 200%;
+    border-radius: 8px;
+    padding: 4px 32px;
+    border: none;
+    width: 80%;
+    color: #000000;
+}
+
+
+
+footer form .submit-btn{
+   position: absolute;
+   left: 342px;
+   top: 50%;
+   transform: translateY(-50%);
+   background: var(--dark-blue-color);
+   border-radius: 8px;
+   padding: 5px 32px;
+   border: 0;
+   font-family: "Poppins", sans-serif;
+   font-weight: normal;
+   font-size: 16px;
+   color: #FFFFFF;
+   
+}
+
+
+
+
+
+
+
 
 
 
