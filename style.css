@@ -65,8 +65,25 @@ nav {
     align-items: center;
     position: fixed;
     width: 1134px;
-    top: 36px;
+    top: 0;
+    padding: 30px 0;
+    z-index: 100;
+    transition: all 500ms ease;
 }
+
+
+nav.scrolled{
+    background: var(--dark-color);
+    box-shadow: 0 16px 14px -8px rgba(0, 0, 0, 0.3);
+    border-radius: 0 0 8px 8px;
+    top: 0;
+    padding: 12px;
+}
+
+
+
+
+
 
 nav .logo {
     font-family: "Raleway", sans-serif;
@@ -157,6 +174,11 @@ nav ul li a {
     height: 680px;
     vertical-align: middle;
 }
+.right img{
+    position: relative;
+    right: 150px;
+}
+
 
 
 
@@ -460,7 +482,7 @@ section p {
 
 .courses-section .wrapper .btn{
     position: absolute;
-    right: 150px;
+    right: 350px;
 }
 
 
@@ -476,11 +498,15 @@ section p {
     gap: 30px;
 }
 
+.app-section p{
+    margin-bottom: 20px;
+}
+
 
 /*footer*/
 
 footer{
-    background: var(--dark-blue-color);
+    background: var(--dark-color);
     color: #fff;
     margin-top: 100px;
     padding: 70px 0;
@@ -554,7 +580,7 @@ footer form input{
 
 footer form .submit-btn{
    position: absolute;
-   left: 342px;
+   left: 280px;
    top: 50%;
    transform: translateY(-50%);
    background: var(--dark-blue-color);
@@ -565,11 +591,89 @@ footer form .submit-btn{
    font-weight: normal;
    font-size: 16px;
    color: #FFFFFF;
-   
+   cursor: pointer;
 }
 
 
 
+
+
+
+
+
+
+
+
+
+@media (max-width: 1100px) {
+    .btn {
+        padding: 12px 32px;
+    }
+
+    .wrapper {
+        padding: 0 100px;
+    }
+
+    nav{
+        width: 100px;
+        left: 0;
+        right: 0;
+        padding: 36px 100px;
+    }
+
+   nav.scrolled {
+    padding: 16px 100px;
+   }
+
+header,
+.hero-section,
+header .wrapper {
+    max-height: 1000px;
+}
+
+.hero-section {
+    flex-direction: column;
+}
+
+.hero-section .left{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-section .left .btn {
+    align-self: flex-start;
+}
+
+.hero-section .left h1{
+    position: absolute;
+    bottom: 0;
+}
+
+
+
+.hero-section .right{
+    position: absolute;
+    bottom: 0;
+}
+
+.hero-section .achievement-card{
+    position: relative;
+    margin-bottom: 80px;
+}
+
+.achievement-card.achievement-card.students-enrolled,
+.achievement-card.achievement-card.overall-rating{
+    left: unset;
+    top: unset;
+}
+
+.achievement-card .achievement-card{
+    align-self: flex-start;
+    margin: 40px;
+}
+}
 
 
 
