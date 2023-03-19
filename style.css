@@ -628,7 +628,7 @@ footer form .submit-btn{
 header,
 .hero-section,
 header .wrapper {
-    max-height: 1000px;
+    max-height: 1100px;
 }
 
 .hero-section {
@@ -647,8 +647,8 @@ header .wrapper {
 }
 
 .hero-section .left h1{
-    position: absolute;
-    bottom: 0;
+   font-size: 50px;
+   line-height: 125%;
 }
 
 
@@ -657,6 +657,11 @@ header .wrapper {
     position: absolute;
     bottom: 0;
 }
+.hero-section .right img{
+    height: 580px;
+}
+
+
 
 .hero-section .achievement-card{
     position: relative;
@@ -673,6 +678,88 @@ header .wrapper {
     align-self: flex-start;
     margin: 40px;
 }
+
+h2{
+    font-size: 40px;
+}
+
+.testimonials-section {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 50px;
+}
+
+.testimonials-section .testimonial-card{
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.testimonials-section .testimonial-card:last-child::before{
+    top: -40px;
+    left: 60px;
+    height: calc(100% + 80px);
+}
+
+.testimonials-section .testimonial-card:last-child{
+    transform: translateX(0px);
+    margin-bottom: 0;
+}
+.testimonials-section .desktop-btn{
+    display:   none;
+}
+
+.testimonials-section .mobile-btn{
+    display: block;
+    align-self: flex-start;
+    order: 3;
+}
+
+.testimonials-section .right{
+    order: 1;
+}
+
+.testimonials-section .left{
+    order: 2;
+}
+.testimonials-section .right p{
+  display: inline;
+}
+.testimonials-section h2{
+    margin-bottom: 20px;
+}
+.courses-section .course-cards{
+    flex-direction: column;
+    gap: 80px;
+}
+
+.courses-section .course-card{
+    margin: 0;
+}
+.courses-section h2{
+    margin-bottom: 40px;
+}
+
+
+.courses-section .course-card  img {
+   height: 260px;
+   object-fit: cover;
+}
+
+.courses-section .wrapper .btn{
+    right: 100px;
+}
+
+.courses-section .course-card:last-child{
+    margin-bottom: 50px;
+}
+
+
+
+footer .links-container {
+    grid-template-columns: 1fr 1fr;
+}
+
+
 }
 
 
