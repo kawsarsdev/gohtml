@@ -398,8 +398,6 @@ section p {
     margin-bottom: 30px;
 }
 
-
-
 /*corses section*/
 
 .courses-section {
@@ -448,11 +446,6 @@ section p {
     background: var(--dark-blue-color);
     border-radius: 24px;
 }
-
-
-
-
-
 
 .courses-section .course-card h3 {
     font-family: "Raleway", sans-serif;
@@ -571,7 +564,6 @@ footer .social a {
     margin-right: 28px;
 }
 
-
 footer form {
     margin-left: 20px;
     margin-top: 16px;
@@ -589,8 +581,6 @@ footer form input {
     width: 80%;
     color: #000000;
 }
-
-
 
 footer form .submit-btn {
     position: absolute;
